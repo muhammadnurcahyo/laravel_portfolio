@@ -23,7 +23,7 @@ Route::get('/', function () {
 // login ke dashboard
 Route::get('/auth/',  [authController::class, "index"])->name('login')->middleware('guest'); //untuk login
 Route::get('/dashboard/',  function(){
-    return "selamat datang " . Auth::user()->email . "  di halaman dashboard";
+    return view('admin.index');
 })->middleware('auth');
 
 
