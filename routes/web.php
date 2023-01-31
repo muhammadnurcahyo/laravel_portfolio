@@ -46,3 +46,6 @@ Route::get('/auth/logout',  [authController::class, "logout"]);
 // arti middleware('guest') adalah untuk orang yg belum pernah login
 // middleware('auth') untuk mencegah akses lgsg ke dashboard
 // name('login') adalah lanjutan dari middleware untuk mengembalikan data yg belum login harus login dulu
+//cek
+
+
